@@ -1,0 +1,550 @@
+@import "./base/bootstrap.min.css";
+* {
+  font-family: MyWebFont, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.home__hero {
+  position: relative;
+  background-color: #000000;
+  width: 92%;
+  height: max-content;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 1100px) {
+  .home__hero {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.home__hero > img {
+  width: 50%;
+  transform: translateX(4rem);
+  margin-top: -5rem;
+}
+@media only screen and (max-width: 1100px) {
+  .home__hero > img {
+    align-self: flex-start;
+    width: 80%;
+  }
+}
+.home__hero--caption {
+  bottom: 12.25rem;
+  width: max-content;
+  height: max-content;
+  color: white;
+  z-index: 7;
+  margin-top: 15rem;
+  transform: translateX(-1rem);
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+@media only screen and (max-width: 1100px) {
+  .home__hero--caption {
+    margin-top: 7rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home__hero--caption {
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home__hero--caption {
+    width: 90%;
+  }
+}
+.home__hero--caption a {
+  align-self: center;
+  width: max-content;
+  text-decoration: unset;
+  font-family: aktiv-grotesk, sans-serif;
+}
+.home__hero--caption a:hover {
+  color: unset;
+}
+.home__hero--caption h2 {
+  font-weight: bold;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 850px) {
+  .home__hero--caption h2 {
+    font-size: 2.2rem;
+    align-self: center;
+    margin-right: 6rem;
+  }
+}
+.home__hero--caption p {
+  margin-bottom: 2rem;
+  align-self: center;
+  width: 72%;
+}
+@media only screen and (max-width: 600px) {
+  .home__hero--caption p {
+    width: 100%;
+  }
+}
+.home__section-premium {
+  background-color: #dcdcdc;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 5rem;
+}
+@media only screen and (max-width: 1100px) {
+  .home__section-premium {
+    height: 46vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home__section-premium {
+    padding-left: 2rem;
+  }
+}
+.home__section-premium h1 {
+  font-size: 50px;
+}
+@media only screen and (max-width: 600px) {
+  .home__section-premium h1 {
+    font-size: 2rem;
+  }
+}
+.home__section-premium h1 span {
+  color: #4e55e3;
+  text-decoration: unset;
+}
+.home__section-premium h1 span:hover {
+  text-decoration: unset;
+}
+.home__section-local {
+  display: flex;
+  justify-content: center;
+  padding-top: 8rem;
+}
+@media only screen and (max-width: 750px) {
+  .home__section-local {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.home__section-local .specialButton {
+  margin-top: 2rem;
+}
+.home__section-local--content {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 25rem;
+}
+@media only screen and (max-width: 750px) {
+  .home__section-local--content {
+    width: 60%;
+    margin-right: unset;
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home__section-local--content {
+    width: 80%;
+  }
+}
+.home__section-local--img--container {
+  position: absolute;
+  right: 0;
+  top: -11rem;
+  z-index: 2;
+}
+@media only screen and (max-width: 750px) {
+  .home__section-local--img--container {
+    position: unset;
+  }
+}
+.home__section-local--img--container:hover:before {
+  left: 0rem;
+  top: 0rem;
+}
+@media only screen and (max-width: 1100px) {
+  .home__section-local--img--container {
+    top: -2.5rem;
+  }
+}
+.home__section-local--text {
+  font-size: 18px;
+}
+.home__section-reference {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 5rem;
+}
+@media only screen and (max-width: 750px) {
+  .home__section-reference {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.home__section-reference--content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 35%;
+}
+@media only screen and (max-width: 1100px) {
+  .home__section-reference--content {
+    width: 43%;
+    margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home__section-reference--content {
+    width: 66%;
+    margin-top: 2rem;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+  }
+}
+.home__section-reference--gray {
+  background-color: #dcdcdc;
+  padding: 3rem 5rem 0 5rem;
+  right: 0;
+  bottom: 0;
+  height: 25rem;
+  width: 80%;
+  z-index: -1;
+  margin-bottom: -8rem;
+}
+@media only screen and (max-width: 750px) {
+  .home__section-reference--gray {
+    margin-bottom: -1rem;
+  }
+}
+.home__section-reference img {
+  left: 0;
+  top: 0;
+}
+.home__section-shop {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 15rem;
+}
+@media only screen and (max-width: 1100px) {
+  .home__section-shop {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.home__section-shop img {
+  margin-top: -25rem;
+  z-index: 10;
+  margin-right: 5rem;
+  left: 4rem;
+  top: 10rem;
+}
+@media only screen and (max-width: 1100px) {
+  .home__section-shop img {
+    z-index: 10;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: -9rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home__section-shop img {
+    width: 86%;
+  }
+}
+.home__section-shop--content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+  margin-left: 5rem;
+  z-index: 1;
+}
+@media only screen and (max-width: 1100px) {
+  .home__section-shop--content {
+    width: 50%;
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home__section-shop--content {
+    width: 84%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    transform: translateY(2rem);
+  }
+}
+.home__section-eshop {
+  margin-top: 10rem;
+  margin-bottom: 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1100px) {
+  .home__section-eshop {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .home__section-eshop {
+    margin-top: -22rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home__section-eshop {
+    margin-top: -19rem;
+  }
+}
+.home__section-eshop--grayBox {
+  background-color: #dcdcdc;
+  padding: 15rem 7rem 0 0;
+}
+@media only screen and (max-width: 1100px) {
+  .home__section-eshop--grayBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+.home__section-eshop--grayBox img {
+  height: 39rem;
+  transform: translateY(6rem);
+}
+@media only screen and (max-width: 750px) {
+  .home__section-eshop--grayBox img {
+    transform: translateY(12rem);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home__section-eshop--grayBox img {
+    height: 24rem;
+  }
+}
+.home__section-eshop--content {
+  width: 33%;
+  margin-right: 3rem;
+}
+@media only screen and (max-width: 1100px) {
+  .home__section-eshop--content {
+    margin-top: 5rem;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .home__section-eshop--content {
+    margin-top: 10rem;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home__section-eshop--content {
+    width: 77%;
+  }
+}
+.home__section-priceList {
+  background-image: url("../img/priceList.jpeg");
+  background-repeat: no-repeat;
+  height: auto;
+  background-size: cover;
+}
+.home__section-priceList h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.home__section-priceList--desc {
+  width: 59%;
+  margin: 0 auto;
+}
+.home__section-priceList .myButton {
+  width: 100%;
+}
+.home__section-footer--box {
+  display: flex;
+  justify-content: center;
+}
+.home__section-footer--box div {
+  width: 50%;
+  -webkit-box-shadow: -1px 5px 17px -3px #fff;
+  box-shadow: -1px 5px 17px -3px #fff;
+  color: #fff;
+  padding: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  .home__section-footer--box div {
+    width: 75%;
+  }
+}
+.home .premium {
+  color: #4e55e3;
+}
+
+@font-face {
+  font-family: icomoon;
+  src: url(https://www.pagesmode.com/fonts/icomoon.eot?c7mcgc);
+  src: url(https://www.pagesmode.com/fonts/icomoon.eot?c7mcgc#iefix) format("embedded-opentype"), url(https://www.pagesmode.com/fonts/icomoon.ttf?c7mcgc) format("truetype"), url(https://www.pagesmode.com/fonts/icomoon.woff?c7mcgc) format("woff"), url(https://www.pagesmode.com/fonts/icomoon.svg?c7mcgc#icomoon) format("svg");
+}
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@font-face {
+  font-family: FontAwesome;
+  src: url(https://www.pagesmode.com/fonts/fontawesome-webfont.eot?v=4.7.0);
+  src: url(https://www.pagesmode.com/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(https://www.pagesmode.com/fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(https://www.pagesmode.com/fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"), url(https://www.pagesmode.com/fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"), url(https://www.pagesmode.com/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("./css/font/AktivGroteskCorp-Medium.ttf") format("ttf"), url("./css/font/AktivGroteskCorp-Medium.woff") format("woff"), url("./css/font/AktivGroteskCorp-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("../fonts/AktivGroteskCorp-Medium.eot");
+  src: local("fontsAktivGroteskCorp-Medium"), url("../fonts/AktivGroteskCorp-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-Medium.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-Medium.woff") format("woff"), url("../fonts/AktivGroteskCorp-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("../fonts/AktivGroteskCorp-Bold.eot");
+  src: local("AktivGroteskCorp-Bold"), url("../fonts/AktivGroteskCorp-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-Bold.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-Bold.woff") format("woff"), url("../fonts/AktivGroteskCorp-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("../fonts/AktivGroteskCorp-Italic.eot");
+  src: local("AktivGroteskCorp-Italic"), url("../fonts/AktivGroteskCorp-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-Italic.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-Italic.woff") format("woff"), url("../fonts/AktivGroteskCorp-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("../fonts/AktivGroteskCorp-LightItalic.eot");
+  src: local("AktivGroteskCorp-LightItalic"), url("../fonts/AktivGroteskCorp-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-LightItalic.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-LightItalic.woff") format("woff"), url("../fonts/AktivGroteskCorp-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("../fonts/AktivGroteskCorp-MediumItalic.eot");
+  src: local("AktivGroteskCorp-MediumItalic"), url("../fonts/AktivGroteskCorp-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-MediumItalic.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-MediumItalic.woff") format("woff"), url("../fonts/AktivGroteskCorp-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("../fonts/AktivGroteskCorp-Light.eot");
+  src: local("AktivGroteskCorp-Light"), url("../fonts/AktivGroteskCorp-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-Light.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-Light.woff") format("woff"), url("../fonts/AktivGroteskCorp-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("../fonts/AktivGroteskCorp-Regular.eot");
+  src: local("AktivGroteskCorp-Regular"), url("../fonts/AktivGroteskCorp-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-Regular.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-Regular.woff") format("woff"), url("../fonts/AktivGroteskCorp-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("../fonts/AktivGroteskCorp-BoldItalic.eot");
+  src: local("AktivGroteskCorp-BoldItalic"), url("../fonts/AktivGroteskCorp-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-BoldItalic.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-BoldItalic.woff") format("woff"), url("../fonts/AktivGroteskCorp-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+.contact-modal {
+  background: url("../img/cover.webp") no-repeat center;
+  background-size: cover;
+  width: 100%;
+}
+.contact-modal__content {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+}
+.contact-modal .error-form {
+  display: none;
+}
+.contact-modal .modal-footer {
+  display: flex;
+  justify-content: center;
+}
+.contact-modal h5 {
+  color: #4e55e3;
+  text-align: center;
+}
+
+.myButton {
+  background-color: #4e55e3;
+  color: white;
+  padding: 10px 50px;
+  margin-top: 1rem;
+  font-family: aktiv-grotesk, sans-serif;
+  border: unset;
+  transition: background-color 0.1s ease-out;
+  text-decoration: unset;
+}
+.myButton:hover {
+  color: white;
+  text-decoration: unset;
+  background-color: #848aff;
+}
+
+.specialButton {
+  position: relative;
+  color: #4e55e3;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #4e55e3;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  cursor: pointer;
+  text-decoration: unset;
+}
+.specialButton span {
+  z-index: 10;
+  transition: 0.5s color ease-out;
+}
+.specialButton:hover {
+  text-decoration: unset;
+  color: unset;
+}
+.specialButton:hover span {
+  color: white;
+}
+.specialButton:hover:before {
+  transform: scaleX(1);
+}
+.specialButton:before {
+  transition: 0.5s transform ease-out;
+  content: "";
+  z-index: -1;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: #4e55e3;
+  width: 100%;
+  height: 3.4rem;
+  transform: scaleX(0);
+  transform-origin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

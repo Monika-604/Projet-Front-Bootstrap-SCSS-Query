@@ -1,0 +1,29 @@
+@font-face {
+    font-family: icomoon;
+    src: url(https://www.pagesmode.com/fonts/icomoon.eot?c7mcgc);
+    src: url(https://www.pagesmode.com/fonts/icomoon.eot?c7mcgc#iefix) format("embedded-opentype"),
+    url(https://www.pagesmode.com/fonts/icomoon.ttf?c7mcgc) format("truetype"),
+    url(https://www.pagesmode.com/fonts/icomoon.woff?c7mcgc) format("woff"),
+    url(https://www.pagesmode.com/fonts/icomoon.svg?c7mcgc#icomoon) format("svg")
+}
+
+
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@font-face {
+    font-family: FontAwesome;
+    src: url(https://www.pagesmode.com/fonts/fontawesome-webfont.eot?v=4.7.0);
+    src: url(https://www.pagesmode.com/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(https://www.pagesmode.com/fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(https://www.pagesmode.com/fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"), url(https://www.pagesmode.com/fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"), url(https://www.pagesmode.com/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('./css/font/AktivGroteskCorp-Medium.ttf') format('ttf'),
+    url('./css/font/AktivGroteskCorp-Medium.woff') format('woff'),
+    url('./css/font/AktivGroteskCorp-Medium.woff2') format('woff2');
+}

@@ -1,0 +1,285 @@
+<html lang="en">
+<head>
+    <title>Test-landing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body class="home">
+
+<!--//////////////////////// linding //////////////////////////-->
+
+<div class="home__hero">
+    <img src="img/img2.jpeg"/>
+    <div class="home__hero--caption">
+        <h2 class="display-2">Propulsez votre visibilité</h2>
+        <p class="lead">sur Internet ! Boostez la fréquentation de votre site, e-shop, Instagram, Facebook</p>
+        <a class="myButton" data-bs-toggle="modal" href="#ModalToggle" role="button">Nous
+            contacter</a>
+    </div>
+</div>
+
+
+<!--//////////////////////// Modal contact ////////////////////////////-->
+
+<div class="modal fade contact-modal " id="ModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+     tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content contact-modal__content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel">Nous contacter</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <form class="needs-validation" novalidate>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                        </symbol>
+                    </svg>
+
+                    <div class="error-form alert alert-primary  align-items-center" role="alert">
+                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                            <use xlink:href="#info-fill"/>
+                        </svg>
+                        <div>
+                        </div>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="first-name" placeholder="Prénom" min="3" max="30"
+                               required>
+                        <label for="first-name">Prénom</label>
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="last-name" placeholder="Nom">
+                        <label for="last-name">Nom</label>
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        <label for="email">Email </label>
+                        <div class="invalid-feedback"></div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="submit" id="register-contact" class="myButton">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--///////// main/ container-1 ///////////-->
+
+
+<div class="home__section-premium py-5" id="about">
+    <h1 class="font-title font-weight-bold">Le référencement <span class="premium">PREMIUM</span></h1>
+    <h3 class="mt-4 " style="color: #4449;font-size: 23px;">Propulse la visibilité de votre boutique sur
+        Internet !</h3>
+</div>
+
+
+<!--///////////// container-2////////////////-->
+
+
+<div class="home__section-local position-relative pb-5">
+    <div class="home__section-local--content">
+        <h3>Votre boutique affichée en priorité localement</h3>
+        <p class="text-justify home__section-local--text pr-5">
+            Votre boutique s’affiche en tête de liste lorsqu’une marque que vous distribuez est recherchée dans
+            rayon de 50 km, elle est également affichée dans les rubriques « boutiques autour de vous »
+        </p>
+        <a href="https://www.pagesmode.com/rains?ville=STRASBOURG%2867000%29#resultat" class="specialButton">
+            <span class="text">Voir plus</span>
+        </a>
+    </div>
+    <div class="home__section-local--img--container">
+        <img src="img/vitre.png" class="home__section-local--img img-fluid "/>
+    </div>
+</div>
+
+<!--///////// container-3 ///////////////////-->
+
+
+<div class="home__section-reference container-fluid mt-5 pt-5">
+    <div class="home__section-reference--gray position-absolute">
+    </div>
+    <img src="img/shoppingMobile2.jpg"
+         class="home__section-reference--img img-fluid about-img"/>
+    <div class="home__section-reference--content ">
+        <h3 class-="">Votre E-SHOP référencé pour vos marques</h3>
+        <p class="text-justify home__section-reference--text pr-5  mt-4">
+            Votre e-shop (ou autre espace de vente à distance) s’affiche nationalement sur les pages des marques
+            que vous distribuez avec un lien de redirection.
+        </p>
+        <a  href="https://www.pagesmode.com/acne-studios?ville=PARIS%2875001%29#resultat" class="specialButton ">
+            <span class="text">Voir plus</span>
+        </a>
+    </div>
+</div>
+
+<div class="home__section-shop">
+    <img src="img/shoppingNew.jpeg"
+         class="home__section-reference--img img-fluid gray-img"/>
+    <div class="home__section-shop--content">
+        <h3 class="mb-3">Votre site, vos réseaux sociaux mis en avant️</h3>
+        <p class="mb-5">Votre site référencé sur PAGESMODE et affiché sur
+            vos espaces optimise sa fréquentation, ainsi que son référencement Google (1).</p>
+        <a href="https://www.google.com/search?q=samsoe+samsoe+strasbourg" class="specialButton">
+            <span class="text">Voir plus</span>
+        </a>
+    </div>
+</div>
+
+<!--///////////// container-4 /////////////-->
+<div class="home__section-eshop container-fluid">
+    <div class="home__section-eshop--grayBox">
+        <img src="img/googleSection.jpeg"/>
+    </div>
+    <div class="home__section-eshop--content">
+        <h3 class="mt-5 pt-5 pb-3">Votre boutique dans les premiers résultats sur Google®️</h3>
+        <p class="pb-4">Votre page boutique avec vos collections apparaît dans les résultats Google lorsqu’une des
+            marques que vous distribuez est recherchée dans votre localisation.</p>
+        <a href="https://www.google.fr/search?q=barbara+bui+lille&oq=barbara+bui+lille" class="specialButton">
+            <span class="text">Voir plus</span>
+        </a>
+    </div>
+</div>
+
+
+<!--///////////// container-5 /////////////-->
+
+<section class="home__section-priceList">
+    <div class="container py-5">
+        <!-- FOR DEMO PURPOSE -->
+        <header class="text-center mb-5 text-white">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2>Abonnement mensuel <span class="premium">sans engagement</span></h2>
+                    <p class="home__section-priceList--desc">Simple, votre abonnement est mensuellement débité de la
+                        carte de crédit, il est résiliable
+                        à tout moment et vos factures sont disponibles en téléchargement dans votre COMPTE.
+                    </p>
+                </div>
+            </div>
+        </header>
+        <!-- END -->
+
+
+        <div class="row text-center align-items-end">
+            <!-- Pricing Table-->
+            <div class="col-lg-2 "></div>
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <div class="bg-white p-5 rounded-lg shadow">
+                    <h1 class="h6 text-uppercase font-weight-bold mb-4">Basic</h1>
+                    <h2 class="h1 font-weight-bold">Gratuit<span class="text-small font-weight-normal ml-2"></span></h2>
+
+                    <div class="custom-separator my-4 mx-auto bg-primary"></div>
+
+                    <ul class="list-unstyled my-5 text-small text-left">
+                        <li class="mb-3">
+                            Boutique à proximité en ligne basic
+                        </li>
+
+                        <li class="mb-3">
+                             Résultat de recherche de boutiques Selon
+                            géolocalisation
+                        </li>
+
+                        <li class="mb-3 text-muted">
+
+                            <del>Module Web-Link avec liens de redirection</del>
+                        </li>
+
+                        <li class="mb-3">
+                           publication de vos liens et votre page
+                            boutique
+                        </li>
+
+                        <li class="mb-3 text-muted">
+
+                            <del>Recherches de vos marques sur votre ville sur les moteurs de recherche (Google et
+                                autres)*
+                            </del>
+                        </li>
+
+
+                    </ul>
+                    <a href="https://www.pagesmode.com/?action=logout" class="myButton shadow">Sign Up</a>
+                </div>
+            </div>
+            <!-- END -->
+
+
+            <!-- Pricing Table-->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <div class="bg-white p-5 rounded-lg shadow">
+                    <h1 class="h6 text-uppercase font-weight-bold mb-4">Premium</h1>
+                    <h2 class="h1 font-weight-bold">29,00€<span class="text-small font-weight-normal ml-2"></span>/ mois
+                    </h2>
+
+                    <div class="custom-separator my-4 mx-auto bg-primary"></div>
+
+                    <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
+                        <li class="mb-3">
+                            Module E-shop national
+                        </li>
+                        <li class="mb-3">
+                            Affichage en tête de list selon géolocation
+                            étendue à 50k
+                        </li>
+                        <li class="mb-3">
+                             Module Web-Link avec liens de redirection
+                        </li>
+                        <li class="mb-3">
+                             Les pages de vos marques géolocalisées + votre
+                            page boutique
+                        </li>
+                        <li class="mb-3">
+                         Recherches de vos marques sur votre ville sur
+                            les moteurs de recherche (Google et autres)*.
+                        </li>
+
+                    </ul>
+                    <a href="https://www.pagesmode.com/?action=logout" class="myButton shadow ">Sign Up</a>
+                </div>
+            </div>
+            <!-- END -->
+
+            <div class="col-lg-2 "></div>
+
+
+        </div>
+    </div>
+    <div class="row home__section-footer--box">
+        <div class="mb-5">
+            <p>*Pagesmode soumet à Google (ainsi qu'aux autres moteurs de recherche) les méta-données "marque & ville"
+                pour optimiser le référencement de votre boutique pour les recherches croisées. Le référencement SEO
+                (naturel ou organique) dépend totalement des éditeurs (ex. Google) et de leurs algorythmes, en
+                conséquence, les résultats dans les moteurs de recherche internet sont par définition aléatoires et
+                s'obtiennent sur le long terme (plusieurs mois).
+            </p>
+            <h4>Pour plus d’infos contactez le service<span class="premium"> PREMIUM</span> au <a class="premium"
+                                                                                                  href="tel:+33-0369-094-062">
+                0369 094 062</a>
+            </h4>
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

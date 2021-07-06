@@ -1,0 +1,16 @@
+//base
+@import "./base/bootstrap.min.css";
+@import "./base/variables";
+@import "./base/mixin";
+@import "base/base";
+
+//pages
+@import "./pages/home";
+
+// fonts
+@import "./font/font-face";
+@import "./font/stylesheet";
+
+//components
+@import "./components/contact-modal";
+@import "./components/button";

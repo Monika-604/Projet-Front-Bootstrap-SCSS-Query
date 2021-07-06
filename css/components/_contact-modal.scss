@@ -1,0 +1,23 @@
+.contact-modal {
+  background: url("../img/cover.webp") no-repeat center;
+  background-size: cover;
+  width: 100%;
+
+  &__content {
+    background-color: rgba(270, 270, 270, 0.8);
+    width: 100%;
+  }
+
+  .error-form {
+    display: none;
+  }
+  .modal-footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  h5 {
+    color: $color-primary;
+    text-align: center;
+  }
+}
